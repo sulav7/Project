@@ -53,6 +53,7 @@ export default function Read() {
 
           {apiData.map((contact) => (
             <tr>
+              {console.log(contact)}
               {/* <td>{contact.name}</td> */}
               <td>{contact.username}</td>
               <td>{contact.phone}</td>
@@ -60,7 +61,7 @@ export default function Read() {
               <td>
                 <button>Delete</button>
 
-                <button>Edit</button>
+                <button onClick={() => handleEdit(e.id)}>Edit</button>
 
                 <button>Read</button>
               </td>
